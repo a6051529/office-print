@@ -1,0 +1,6 @@
+{
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "trailingComma": "none",
+  "ignore": ["node_modules", "lib", "package-lock.json"]
+}
