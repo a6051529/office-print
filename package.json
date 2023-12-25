@@ -1,7 +1,8 @@
 {
   "name": "office-print",
   "description": "一款用于在网页中打印Office文件的软件，可以打印包括Word、PowerPoint、Excel、PDF、图片等文件。",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "main": "index.mjs",
   "author": "innben <hinjin@innben.com> (https://www.innben.com/print)",
   "bugs": {
     "url": "https://github.com/a6051529/office-print/issues",
@@ -43,14 +44,18 @@
   },
   "homepage": "https://github.com/a6051529/office-print",
   "keywords": [
-    "lass",
-    "office-print"
+    "print",
+    "office print",
+    "excel print",
+    "word print",
+    "powerpoint print",
+    "pdf print",
+    "image print"
   ],
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": "eslint"
   },
   "license": "MIT",
-  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/a6051529/office-print"

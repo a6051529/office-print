@@ -22,3 +22,5 @@ coverage
 #      Files      #
 ###################
 *.log
+index.mjs
+index.umd.js

@@ -2,11 +2,15 @@ export default class Http {
     host = 'localhost';
     port = 8888;
 
+    constructor(options : {host: string}) {
+        this.host = options.host || this.host;
+    }
+
     // 发送文件
     async sendFile(file: File){
         return new Promise((resolve, reject) => {
             const xhr = new XMLHttpRequest();
-            xhr.open('POST', `http://${this.host}:${this.port}/upload`);
+            xhr.open('POST', `http://${this.host}:${this.port}/sendFile`);
             xhr.onload = () => {
                 if(xhr.status === 200){
                     let res = JSON.parse(xhr.responseText);
@@ -32,7 +36,7 @@ export default class Http {
     async printFile(path: string){
         return new Promise((resolve, reject) => {   
             const xhr = new XMLHttpRequest();
-            xhr.open('POST', `http://${this.host}:${this.port}/print`);
+            xhr.open('POST', `http://${this.host}:${this.port}/printFile`);
             xhr.setRequestHeader('Content-Type', 'application/json');
             xhr.onload = () => {
                 if(xhr.status === 200){

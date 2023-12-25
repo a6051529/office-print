@@ -20,7 +20,7 @@ export default () => {
       ],
     },
     build:{
-      outDir:"lib",
+      outDir:"",
       target: "es2015",
       // minify: "esbuild",
       // chunkSizeWarningLimit: 2000,
