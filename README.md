@@ -31,7 +31,7 @@ yarn add office-print --save
 
 ## Usage
 
-### 打印网络excel、Word、PowerPoint、PDF
+### 一、打印网络excel、Word、PowerPoint、PDF
 ```js
 const OfficePrint = require('office-print');
 
@@ -44,7 +44,7 @@ fetch(fileUrl).then(response => response.arrayBuffer()).then(arrayBuffer => {
 // script
 ```
 
-### 打印本地电脑中的excel、Word、PowerPoint、PDF
+### 二、打印本地电脑中的excel、Word、PowerPoint、PDF
 
 ```html
 <input type="file" id="input">
@@ -63,6 +63,15 @@ function handleFiles() {
     });
 }
 // script
+```
+
+### 三、已知本地文件路径，直接打印本地电脑中的excel、Word、PowerPoint、PDF
+```js
+const OfficePrint = require('office-print');
+
+let fileUrl = 'your local file system excel url';
+const officePrint = new OfficePrint();
+			officePrint.printFile(fileUrl)    
 ```
 
 ## Contributors

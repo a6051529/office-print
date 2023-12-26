@@ -17,12 +17,20 @@ export default class OfficePrint {
 
     // 发送文件
     async sendFile(file: File){
-        return this.http.sendFile(file);
+        try {
+            return this.http.sendFile(file);
+        } catch (e) {
+            this.showDownloadTip();
+        }
     }
 
     // 打印文件
     async printFile(path: string){
-        return this.http.printFile(path);
+        try {
+            return this.http.printFile(path);
+        } catch (e) {
+            this.showDownloadTip();
+        }
     }
 
     // 显示下载提示

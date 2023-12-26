@@ -14,6 +14,14 @@
   "dependencies": {
     "ava": "^6.0.1"
   },
+  "files": [
+    "index.mjs",
+    "index.umd.js",
+    "LICENSE",
+    "README.md",
+    "package.json",
+    "package-lock.json"
+  ],
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
@@ -31,13 +39,16 @@
     "eslint-plugin-promise": "latest",
     "eslint-plugin-unicorn": "latest",
     "fixpack": "latest",
-    "vite": "^4.3.2",
     "husky": "latest",
+    "javascript-obfuscator": "^4.1.0",
     "lint-staged": "latest",
     "nyc": "latest",
     "prettier": "latest",
     "remark-cli": "^9.0.0",
-    "remark-preset-github": "latest"
+    "remark-preset-github": "latest",
+    "rollup-obfuscator": "^4.1.1",
+    "rollup-plugin-uglify": "^6.0.4",
+    "vite": "^4.3.2"
   },
   "engines": {
     "node": ">= 10"

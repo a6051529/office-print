@@ -23,20 +23,6 @@ export default class Http {
                     reject(xhr.responseText);
                 }
             };
-            // xhr.onreadystatechange = function() {
-            //     if (xhr.readyState === 4) {
-            //         if(xhr.status === 200) {
-            //             let res = JSON.parse(xhr.responseText);
-            //                 if (res.status == 0) {
-            //                     resolve(res.data);
-            //                 } else {
-            //                     reject(res.message);
-            //                 }
-            //         } else {
-            //             reject(xhr.responseText);
-            //         }
-            //     }
-            // };
             xhr.onerror = () => {
                 reject(xhr.responseText);
             };
