@@ -1,7 +1,7 @@
 {
   "name": "office-print",
   "description": "一款用于在网页中打印Office文件的软件，可以打印包括Word、PowerPoint、Excel、PDF、图片等文件。",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "index.mjs",
   "author": "innben <hinjin@innben.com> (https://www.innben.com/print)",
   "bugs": {
