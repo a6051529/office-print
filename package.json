@@ -61,7 +61,10 @@
     "word print",
     "powerpoint print",
     "pdf print",
-    "image print"
+    "image print",
+    "printjs",
+    "print js",
+    "exceljs",
   ],
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": "eslint"
